@@ -1,0 +1,29 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>news Details</title>
+</head>
+<body>
+        <!-- =====About section start====== -->
+        <section class="about section " id="about">
+            <div class="container">
+                <div class="row">
+                    <div class="section-title padd-15">
+                        <h2>{{newsdetails.news_desc | safe}}</h2>
+                    </div>
+                </div>
+                <div>
+                    {% if newsDetails.news_image !=Null %}
+                    <img src="/media/{{newsDetails.news_image}}" alt="">
+                    {% endif %}
+                </div>
+            </div>
+        </section>
+
+    <!-- =====About section end====== -->
+
+    
+</body>
+</html>

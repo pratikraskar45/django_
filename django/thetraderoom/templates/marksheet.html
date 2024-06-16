@@ -1,0 +1,22 @@
+    <h1>MARKSHEET</h1>
+    <form method="post">
+        {% csrf_token %}
+        <label for="">Subject 1:</label>
+        <input type="text" name="subject1"  value="{{s1}}">  <br>
+        <label for="">Subject 2:</label> 
+        <input type="text" name="subject2" value="{{s2}}" ><br>
+        <label for="">Subject 3:</label>
+        <input type="text" name="subject3" value="{{s3}}"><br>
+        <label for="">Subject 4:</label>
+        <input type="text" name="subject4" value="{{s4}}" ><br>
+        <label for="">Subject 5:</label>
+        <input type="text" name="subject5" value="{{s5}}"><br>
+
+        <button type="submit">Marksheet</button><br>
+        <label for="">Total :</label>
+        <input type="text" value="{{total}}"><br>
+        <label for="">Percentage :</label>
+        <input type="text" value="{{per}}"><br>
+        <label for="">Division :</label>
+        <input type="text" value="{{div}}"><br>
+    </form>

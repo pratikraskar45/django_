@@ -1,0 +1,28 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Even Odd</title>
+</head>
+<body>
+    <div>
+        <div>
+            <form method="post">
+                {% if error %}
+                <div class="alert alert-danger" role="alert">
+                    Please Enter the Value....
+                </div>
+                {% endif %}
+                {% csrf_token %}
+                <label for="">Value 1:</label>
+                <input type="text" name="num1" value="{{n1}}"> <br>
+            
+                <button type="submit">Even | Odd</button> <br>
+                <label for="">Output:</label>
+                <input type="text" value="{{c}}">
+            </form>
+        </div>
+    </div>
+</body>
+</html>
